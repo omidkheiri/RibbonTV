@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+drawable ic_search
+drawable ic_settings
 drawable tv_banner
 drawable tv_icon
 style Theme.IPTVPlayer

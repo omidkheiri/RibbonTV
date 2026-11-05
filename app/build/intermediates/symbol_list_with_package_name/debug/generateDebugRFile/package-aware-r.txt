@@ -1,4 +1,6 @@
 com.iptvplayer.tv
+drawable ic_search
+drawable ic_settings
 drawable tv_banner
 drawable tv_icon
 style Theme_IPTVPlayer
