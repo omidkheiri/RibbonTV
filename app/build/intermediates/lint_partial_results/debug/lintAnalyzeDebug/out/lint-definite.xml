@@ -54,4 +54,44 @@
             endOffset="108"/>
     </incident>
 
+    <incident
+        id="NewerVersionAvailable"
+        severity="warning"
+        message="A newer version of io.coil-kt.coil3:coil-compose than 3.4.0 is available: 3.6.3">
+        <fix-replace
+            description="Change to 3.6.3"
+            family="Update versions"
+            oldString="3.4.0"
+            replacement="3.6.3"
+            priority="0"/>
+        <location
+            file="$HOME/Projects/IPTVPlayer/gradle/libs.versions.toml"
+            line="18"
+            column="8"
+            startOffset="369"
+            endLine="18"
+            endColumn="15"
+            endOffset="376"/>
+    </incident>
+
+    <incident
+        id="NewerVersionAvailable"
+        severity="warning"
+        message="A newer version of io.coil-kt.coil3:coil-network-okhttp than 3.4.0 is available: 3.6.3">
+        <fix-replace
+            description="Change to 3.6.3"
+            family="Update versions"
+            oldString="3.4.0"
+            replacement="3.6.3"
+            priority="0"/>
+        <location
+            file="$HOME/Projects/IPTVPlayer/gradle/libs.versions.toml"
+            line="18"
+            column="8"
+            startOffset="369"
+            endLine="18"
+            endColumn="15"
+            endOffset="376"/>
+    </incident>
+
 </incidents>

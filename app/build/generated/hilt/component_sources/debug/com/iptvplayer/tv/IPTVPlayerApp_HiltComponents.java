@@ -1,6 +1,12 @@
 package com.iptvplayer.tv;
 
+import androidx.hilt.work.HiltWrapper_WorkerFactoryModule;
 import com.iptvplayer.tv.core.player.PlayerViewModel_HiltModules;
+import com.iptvplayer.tv.di.DatabaseModule;
+import com.iptvplayer.tv.di.NetworkModule;
+import com.iptvplayer.tv.di.RepositoryBindings;
+import com.iptvplayer.tv.feature.home.PlaylistViewModel_HiltModules;
+import com.iptvplayer.tv.feature.refresh.PlaylistRefreshWorker_HiltModule;
 import dagger.Binds;
 import dagger.Component;
 import dagger.Module;
@@ -126,9 +132,14 @@ public final class IPTVPlayerApp_HiltComponents {
   @Component(
       modules = {
           ApplicationContextModule.class,
+          DatabaseModule.class,
           HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule.class,
+          HiltWrapper_WorkerFactoryModule.class,
           ActivityRetainedCBuilderModule.class,
-          ServiceCBuilderModule.class
+          ServiceCBuilderModule.class,
+          NetworkModule.class,
+          PlaylistRefreshWorker_HiltModule.class,
+          RepositoryBindings.class
       }
   )
   @Singleton
@@ -156,7 +167,8 @@ public final class IPTVPlayerApp_HiltComponents {
           HiltWrapper_ActivitySavedStateHandleModule.class,
           ActivityCBuilderModule.class,
           ViewModelCBuilderModule.class,
-          PlayerViewModel_HiltModules.KeyModule.class
+          PlayerViewModel_HiltModules.KeyModule.class,
+          PlaylistViewModel_HiltModules.KeyModule.class
       }
   )
   @ActivityRetainedScoped
@@ -193,7 +205,8 @@ public final class IPTVPlayerApp_HiltComponents {
   @Subcomponent(
       modules = {
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
-          PlayerViewModel_HiltModules.BindsModule.class
+          PlayerViewModel_HiltModules.BindsModule.class,
+          PlaylistViewModel_HiltModules.BindsModule.class
       }
   )
   @ViewModelScoped

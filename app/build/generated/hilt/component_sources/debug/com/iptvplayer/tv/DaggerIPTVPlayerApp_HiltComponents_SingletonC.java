@@ -2,16 +2,37 @@ package com.iptvplayer.tv;
 
 import android.app.Activity;
 import android.app.Service;
+import android.content.Context;
 import android.view.View;
 import androidx.fragment.app.Fragment;
+import androidx.hilt.work.HiltWorkerFactory;
+import androidx.hilt.work.WorkerAssistedFactory;
+import androidx.hilt.work.WorkerFactoryModule_ProvideFactoryFactory;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
+import androidx.work.ListenableWorker;
+import androidx.work.WorkerParameters;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import com.iptvplayer.tv.core.player.PlayerViewModel;
 import com.iptvplayer.tv.core.player.PlayerViewModel_HiltModules;
 import com.iptvplayer.tv.core.player.PlayerViewModel_HiltModules_BindsModule_Binds_LazyMapKey;
 import com.iptvplayer.tv.core.player.PlayerViewModel_HiltModules_KeyModule_Provide_LazyMapKey;
+import com.iptvplayer.tv.data.local.IptvDatabase;
+import com.iptvplayer.tv.data.local.PlaylistDao;
+import com.iptvplayer.tv.data.remote.DefaultM3uParser;
+import com.iptvplayer.tv.data.remote.PlaylistDownloader;
+import com.iptvplayer.tv.data.repository.DefaultPlaylistRepository;
+import com.iptvplayer.tv.di.DatabaseModule_ProvideIptvDatabaseFactory;
+import com.iptvplayer.tv.di.DatabaseModule_ProvidePlaylistDaoFactory;
+import com.iptvplayer.tv.di.NetworkModule_ProvideOkHttpClientFactory;
+import com.iptvplayer.tv.domain.classification.DefaultContentClassifier;
+import com.iptvplayer.tv.feature.home.PlaylistViewModel;
+import com.iptvplayer.tv.feature.home.PlaylistViewModel_HiltModules;
+import com.iptvplayer.tv.feature.home.PlaylistViewModel_HiltModules_BindsModule_Binds_LazyMapKey;
+import com.iptvplayer.tv.feature.home.PlaylistViewModel_HiltModules_KeyModule_Provide_LazyMapKey;
+import com.iptvplayer.tv.feature.refresh.PlaylistRefreshWorker;
+import com.iptvplayer.tv.feature.refresh.PlaylistRefreshWorker_AssistedFactory;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.ViewModelLifecycle;
 import dagger.hilt.android.internal.builders.ActivityComponentBuilder;
@@ -32,9 +53,11 @@ import dagger.internal.DoubleCheck;
 import dagger.internal.LazyClassKeyMap;
 import dagger.internal.Preconditions;
 import dagger.internal.Provider;
+import dagger.internal.SingleCheck;
 import java.util.Map;
 import java.util.Set;
 import javax.annotation.processing.Generated;
+import okhttp3.OkHttpClient;
 
 @DaggerGenerated
 @Generated(
@@ -369,7 +392,7 @@ public final class DaggerIPTVPlayerApp_HiltComponents_SingletonC {
 
     @Override
     public Map<Class<?>, Boolean> getViewModelKeys() {
-      return LazyClassKeyMap.<Boolean>of(ImmutableMap.<String, Boolean>of(PlayerViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, PlayerViewModel_HiltModules.KeyModule.provide()));
+      return LazyClassKeyMap.<Boolean>of(ImmutableMap.<String, Boolean>of(PlayerViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, PlayerViewModel_HiltModules.KeyModule.provide(), PlaylistViewModel_HiltModules_KeyModule_Provide_LazyMapKey.lazyClassKeyName, PlaylistViewModel_HiltModules.KeyModule.provide()));
     }
 
     @Override
@@ -397,6 +420,8 @@ public final class DaggerIPTVPlayerApp_HiltComponents_SingletonC {
 
     Provider<PlayerViewModel> playerViewModelProvider;
 
+    Provider<PlaylistViewModel> playlistViewModelProvider;
+
     ViewModelCImpl(SingletonCImpl singletonCImpl, ActivityRetainedCImpl activityRetainedCImpl,
         SavedStateHandle savedStateHandleParam, ViewModelLifecycle viewModelLifecycleParam) {
       this.singletonCImpl = singletonCImpl;
@@ -410,11 +435,12 @@ public final class DaggerIPTVPlayerApp_HiltComponents_SingletonC {
     private void initialize(final SavedStateHandle savedStateHandleParam,
         final ViewModelLifecycle viewModelLifecycleParam) {
       this.playerViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
+      this.playlistViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
     }
 
     @Override
     public Map<Class<?>, javax.inject.Provider<ViewModel>> getHiltViewModelMap() {
-      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(ImmutableMap.<String, javax.inject.Provider<ViewModel>>of(PlayerViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) (playerViewModelProvider))));
+      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(ImmutableMap.<String, javax.inject.Provider<ViewModel>>of(PlayerViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) (playerViewModelProvider)), PlaylistViewModel_HiltModules_BindsModule_Binds_LazyMapKey.lazyClassKeyName, ((Provider) (playlistViewModelProvider))));
     }
 
     @Override
@@ -445,6 +471,9 @@ public final class DaggerIPTVPlayerApp_HiltComponents_SingletonC {
         switch (id) {
           case 0: // com.iptvplayer.tv.core.player.PlayerViewModel
           return (T) new PlayerViewModel(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
+
+          case 1: // com.iptvplayer.tv.feature.home.PlaylistViewModel
+          return (T) new PlaylistViewModel(singletonCImpl.defaultPlaylistRepositoryProvider.get(), ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
           default: throw new AssertionError(id);
         }
@@ -526,13 +555,48 @@ public final class DaggerIPTVPlayerApp_HiltComponents_SingletonC {
 
     private final SingletonCImpl singletonCImpl = this;
 
+    Provider<IptvDatabase> provideIptvDatabaseProvider;
+
+    Provider<OkHttpClient> provideOkHttpClientProvider;
+
+    Provider<DefaultPlaylistRepository> defaultPlaylistRepositoryProvider;
+
+    Provider<PlaylistRefreshWorker_AssistedFactory> playlistRefreshWorker_AssistedFactoryProvider;
+
     SingletonCImpl(ApplicationContextModule applicationContextModuleParam) {
       this.applicationContextModule = applicationContextModuleParam;
+      initialize(applicationContextModuleParam);
 
+    }
+
+    PlaylistDao playlistDao() {
+      return DatabaseModule_ProvidePlaylistDaoFactory.providePlaylistDao(provideIptvDatabaseProvider.get());
+    }
+
+    PlaylistDownloader playlistDownloader() {
+      return new PlaylistDownloader(provideOkHttpClientProvider.get());
+    }
+
+    Map<String, javax.inject.Provider<WorkerAssistedFactory<? extends ListenableWorker>>> mapOfStringAndProviderOfWorkerAssistedFactoryOfListenableWorker(
+        ) {
+      return ImmutableMap.<String, javax.inject.Provider<WorkerAssistedFactory<? extends ListenableWorker>>>of("com.iptvplayer.tv.feature.refresh.PlaylistRefreshWorker", ((Provider) (playlistRefreshWorker_AssistedFactoryProvider)));
+    }
+
+    HiltWorkerFactory hiltWorkerFactory() {
+      return WorkerFactoryModule_ProvideFactoryFactory.provideFactory(mapOfStringAndProviderOfWorkerAssistedFactoryOfListenableWorker());
+    }
+
+    @SuppressWarnings("unchecked")
+    private void initialize(final ApplicationContextModule applicationContextModuleParam) {
+      this.provideIptvDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<IptvDatabase>(singletonCImpl, 2));
+      this.provideOkHttpClientProvider = DoubleCheck.provider(new SwitchingProvider<OkHttpClient>(singletonCImpl, 3));
+      this.defaultPlaylistRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<DefaultPlaylistRepository>(singletonCImpl, 1));
+      this.playlistRefreshWorker_AssistedFactoryProvider = SingleCheck.provider(new SwitchingProvider<PlaylistRefreshWorker_AssistedFactory>(singletonCImpl, 0));
     }
 
     @Override
     public void injectIPTVPlayerApp(IPTVPlayerApp iPTVPlayerApp) {
+      injectIPTVPlayerApp2(iPTVPlayerApp);
     }
 
     @Override
@@ -548,6 +612,48 @@ public final class DaggerIPTVPlayerApp_HiltComponents_SingletonC {
     @Override
     public ServiceComponentBuilder serviceComponentBuilder() {
       return new ServiceCBuilder(singletonCImpl);
+    }
+
+    private IPTVPlayerApp injectIPTVPlayerApp2(IPTVPlayerApp instance) {
+      IPTVPlayerApp_MembersInjector.injectWorkerFactory(instance, hiltWorkerFactory());
+      return instance;
+    }
+
+    private static final class SwitchingProvider<T> implements Provider<T> {
+      private final SingletonCImpl singletonCImpl;
+
+      private final int id;
+
+      SwitchingProvider(SingletonCImpl singletonCImpl, int id) {
+        this.singletonCImpl = singletonCImpl;
+        this.id = id;
+      }
+
+      @Override
+      @SuppressWarnings("unchecked")
+      public T get() {
+        switch (id) {
+          case 0: // com.iptvplayer.tv.feature.refresh.PlaylistRefreshWorker_AssistedFactory
+          return (T) new PlaylistRefreshWorker_AssistedFactory() {
+            @Override
+            public PlaylistRefreshWorker create(Context appContext,
+                WorkerParameters workerParameters) {
+              return new PlaylistRefreshWorker(appContext, workerParameters, singletonCImpl.defaultPlaylistRepositoryProvider.get());
+            }
+          };
+
+          case 1: // com.iptvplayer.tv.data.repository.DefaultPlaylistRepository
+          return (T) new DefaultPlaylistRepository(singletonCImpl.provideIptvDatabaseProvider.get(), singletonCImpl.playlistDao(), singletonCImpl.playlistDownloader(), new DefaultM3uParser(), new DefaultContentClassifier());
+
+          case 2: // com.iptvplayer.tv.data.local.IptvDatabase
+          return (T) DatabaseModule_ProvideIptvDatabaseFactory.provideIptvDatabase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
+
+          case 3: // okhttp3.OkHttpClient
+          return (T) NetworkModule_ProvideOkHttpClientFactory.provideOkHttpClient();
+
+          default: throw new AssertionError(id);
+        }
+      }
     }
   }
 }

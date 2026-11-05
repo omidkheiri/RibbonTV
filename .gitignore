@@ -1,0 +1,22 @@
+# Android Studio and IntelliJ
+.idea/
+*.iml
+
+# Local machine configuration
+local.properties
+.DS_Store
+
+# Gradle and Kotlin caches
+.gradle/
+.kotlin/
+
+# Build outputs
+**/build/
+captures/
+*.apk
+*.aab
+*.hprof
+
+# Native build outputs
+.cxx/
+.externalNativeBuild/

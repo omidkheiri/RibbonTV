@@ -38,19 +38,27 @@ Versions are centrally managed in `gradle/libs.versions.toml`:
 | Lifecycle | 2.11.0 |
 | Activity Compose | 1.13.0 |
 | KSP | 2.3.13 |
+| Coil Compose | 3.4.0 |
+| AndroidX Hilt Work | 1.4.0 |
 
 ## Architecture
 
 - `MainActivity.kt` hosts the Compose TV screen and obtains its `PlayerViewModel` through Hilt.
 - `feature/player/PlayerScreen.kt` displays the fullscreen player, loading/error states, and a focusable remote-control play/pause button.
 - `core/player/PlayerViewModel.kt` owns the Media3 ExoPlayer lifecycle and HLS playback state.
+- `feature/home/PlaylistViewModel.kt` coordinates playlist URL input, refresh progress, category browsing, and periodic refresh scheduling.
+- `data/remote/PlaylistDownloader.kt` downloads HTTP(S) playlists with bounded size and reports byte progress.
+- `data/remote/M3uParser.kt` parses standard M3U `#EXTINF` entries, common IPTV metadata, and relative stream URLs.
+- `domain/classification/ContentClassifier.kt` classifies only explicit category conventions and leaves uncertain items uncategorized.
+- `data/local/` persists playlist metadata and content in Room. Successful refreshes replace the catalog in one database transaction; failed downloads/parses leave the previous catalog intact.
+- `feature/refresh/PlaylistRefreshWorker.kt` refreshes the saved playlist periodically when a network is available.
 - `domain/model/IptvModels.kt` defines `Channel`, `ChannelGroup`, `Playlist`, `EPGProgram`, `FavoriteChannel`, and `PlaybackState`.
 - `data/remote/M3uPlaylistParser.kt` parses channel-list M3U entries and their common TV metadata.
 - `domain/repository/ChannelRepository.kt` defines the channel repository boundary.
 
 M3U playlist parsing and HLS playback are separate concerns: the parser reads playlist metadata such as `#EXTINF` and produces channel records. HLS manifests (identified by `#EXT-X-` tags) are not treated as channel playlists; individual channel stream URLs are passed to Media3 for playback.
 
-Room, Retrofit/OkHttp, Coroutines/Flow, WorkManager, and Hilt dependencies are configured for future work. Persistent channel storage, playlist synchronization, EPG, and favorites are not implemented yet.
+Room stores the downloaded catalog for offline browsing; playback still requires network access. Retrofit is included for future API integrations but playlist retrieval currently uses OkHttp directly.
 
 ## Build and run
 
@@ -65,6 +73,8 @@ Run the M3U parser unit tests:
 ```sh
 ./gradlew :app:testDebugUnitTest
 ```
+
+The unit tests cover M3U metadata parsing, conservative Live TV / Movies / Series / Videos classification, URL validation, and playlist download progress. For a real import check, enter an authorized HTTP(S) M3U URL in the app, select **Load Playlist**, then browse each category with the TV remote.
 
 Start the Android TV emulator:
 
@@ -95,10 +105,12 @@ adb shell input keyevent KEYCODE_DPAD_CENTER
 ## Known limitations and next steps
 
 - Playback requires network access to `https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8`.
-- The app currently plays only that public test stream; it does not load channel/provider playlists.
-- M3U parsing has JVM unit tests; repository, UI, and player behavior do not have automated tests yet.
+- Only user-provided playlist URLs and their authorized streams should be used. The application does not bundle provider URLs or content.
+- The classifier uses playlist metadata and recognizable group conventions; ambiguous entries intentionally appear under **Uncategorized** for review.
+- HTTP URLs are supported as requested, which enables cleartext networking at the app level. Prefer HTTPS whenever the playlist host supports it.
+- M3U parsing and classification have JVM unit tests; repository, UI, and player behavior do not yet have automated integration tests.
 - This command-line-tools release warns that `sdkmanager` is deprecated and recommends Android CLI for new SDK-management workflows; `sdkmanager --list_installed` remains available for verification.
 - Lint retains three intentional warnings: API 36 is the latest stable target documented here, Compose Compiler 2.2.10 is pinned to the compiler bundled with AGP 9.5.0, and the 320×180 TV launcher banner exceeds the generic vector-icon size recommendation.
 - Connect the parser to playlist import, then add Room-backed channels and repository synchronization.
-- Add playlist import/settings, EPG data, and favorites after the basic channel model is in place.
+- Add playlist management for multiple saved URLs, EPG data, and favorites after the single-playlist flow is validated.
 - Add automated UI and player tests before expanding playback behavior.

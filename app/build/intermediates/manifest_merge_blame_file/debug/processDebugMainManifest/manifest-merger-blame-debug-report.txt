@@ -12,260 +12,222 @@
 9-->INJECTED
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:2:5-67
-11-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:2:22-64
+11-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:3:5-67
+11-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:3:22-64
 12
 13    <uses-feature
-13-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:4:5-6:35
+13-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:5:5-7:35
 14        android:name="android.software.leanback"
-14-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:5:9-49
+14-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:6:9-49
 15        android:required="true" />
-15-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:6:9-32
+15-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:7:9-32
 16    <uses-feature
-16-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:7:5-9:36
+16-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:8:5-10:36
 17        android:name="android.hardware.touchscreen"
-17-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:8:9-52
+17-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:9:9-52
 18        android:required="false" />
-18-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:9:9-33
+18-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:10:9-33
 19
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->[androidx.media3:media3-exoplayer:1.11.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/3fdada0a10435731aa94fb9da8ac0e06/transformed/media3-exoplayer-1.11.1/AndroidManifest.xml:22:5-79
-20-->[androidx.media3:media3-exoplayer:1.11.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/3fdada0a10435731aa94fb9da8ac0e06/transformed/media3-exoplayer-1.11.1/AndroidManifest.xml:22:22-76
+20-->[androidx.media3:media3-exoplayer:1.11.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/9f039972c45025eb51838e9c023709d1/transformed/media3-exoplayer-1.11.1/AndroidManifest.xml:22:5-79
+20-->[androidx.media3:media3-exoplayer:1.11.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/9f039972c45025eb51838e9c023709d1/transformed/media3-exoplayer-1.11.1/AndroidManifest.xml:22:22-76
 21    <uses-permission android:name="android.permission.WAKE_LOCK" />
-21-->[androidx.media3:media3-exoplayer:1.11.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/3fdada0a10435731aa94fb9da8ac0e06/transformed/media3-exoplayer-1.11.1/AndroidManifest.xml:23:5-68
-21-->[androidx.media3:media3-exoplayer:1.11.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/3fdada0a10435731aa94fb9da8ac0e06/transformed/media3-exoplayer-1.11.1/AndroidManifest.xml:23:22-65
+21-->[androidx.media3:media3-exoplayer:1.11.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/9f039972c45025eb51838e9c023709d1/transformed/media3-exoplayer-1.11.1/AndroidManifest.xml:23:5-68
+21-->[androidx.media3:media3-exoplayer:1.11.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/9f039972c45025eb51838e9c023709d1/transformed/media3-exoplayer-1.11.1/AndroidManifest.xml:23:22-65
 22    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-22-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:25:5-81
-22-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:25:22-78
+22-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:25:5-81
+22-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:25:22-78
 23    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-23-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:26:5-77
-23-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:26:22-74
+23-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:26:5-77
+23-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:26:22-74
 24
 25    <permission
-25-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/9a8387f496b775b0a456e72ae6bffb20/transformed/core-1.18.0/AndroidManifest.xml:22:5-24:47
+25-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/fe48ecfd93ab917eaf6b049d1934bc28/transformed/core-1.18.0/AndroidManifest.xml:22:5-24:47
 26        android:name="com.iptvplayer.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-26-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/9a8387f496b775b0a456e72ae6bffb20/transformed/core-1.18.0/AndroidManifest.xml:23:9-81
+26-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/fe48ecfd93ab917eaf6b049d1934bc28/transformed/core-1.18.0/AndroidManifest.xml:23:9-81
 27        android:protectionLevel="signature" />
-27-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/9a8387f496b775b0a456e72ae6bffb20/transformed/core-1.18.0/AndroidManifest.xml:24:9-44
+27-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/fe48ecfd93ab917eaf6b049d1934bc28/transformed/core-1.18.0/AndroidManifest.xml:24:9-44
 28
 29    <uses-permission android:name="com.iptvplayer.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-29-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/9a8387f496b775b0a456e72ae6bffb20/transformed/core-1.18.0/AndroidManifest.xml:26:5-97
-29-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/9a8387f496b775b0a456e72ae6bffb20/transformed/core-1.18.0/AndroidManifest.xml:26:22-94
+29-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/fe48ecfd93ab917eaf6b049d1934bc28/transformed/core-1.18.0/AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/fe48ecfd93ab917eaf6b049d1934bc28/transformed/core-1.18.0/AndroidManifest.xml:26:22-94
 30
 31    <application
-31-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:11:5-28:19
+31-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:12:5-34:19
 32        android:name="com.iptvplayer.tv.IPTVPlayerApp"
-32-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:12:9-38
+32-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:13:9-38
 33        android:allowBackup="true"
-33-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:13:9-35
+33-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:14:9-35
 34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-34-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/9a8387f496b775b0a456e72ae6bffb20/transformed/core-1.18.0/AndroidManifest.xml:28:18-86
+34-->[androidx.core:core:1.18.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/fe48ecfd93ab917eaf6b049d1934bc28/transformed/core-1.18.0/AndroidManifest.xml:28:18-86
 35        android:banner="@drawable/tv_banner"
-35-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:14:9-45
+35-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:15:9-45
 36        android:debuggable="true"
 37        android:extractNativeLibs="false"
 37-->INJECTED
 38        android:icon="@drawable/tv_icon"
-38-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:15:9-41
+38-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:16:9-41
 39        android:label="IPTVPlayer"
-39-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:16:9-35
+39-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:17:9-35
 40        android:supportsRtl="true"
-40-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:17:9-35
-41        android:theme="@style/Theme.IPTVPlayer" >
-41-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:18:9-48
-42        <activity
-42-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:19:9-27:20
-43            android:name="com.iptvplayer.tv.MainActivity"
-43-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:20:13-41
-44            android:exported="true" >
-44-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:21:13-36
-45            <intent-filter>
-45-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:22:13-26:29
-46                <action android:name="android.intent.action.MAIN" />
-46-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:23:17-69
-46-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:23:25-66
-47
-48                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-48-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:25:17-86
-48-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:25:27-83
-49            </intent-filter>
-50        </activity>
-51        <activity
-51-->[androidx.compose.ui:ui-tooling-android:1.12.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/f3fe8070a0892856c8fea92bae40bea0/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
-52            android:name="androidx.compose.ui.tooling.PreviewActivity"
-52-->[androidx.compose.ui:ui-tooling-android:1.12.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/f3fe8070a0892856c8fea92bae40bea0/transformed/ui-tooling/AndroidManifest.xml:24:13-71
-53            android:exported="true" />
-53-->[androidx.compose.ui:ui-tooling-android:1.12.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/f3fe8070a0892856c8fea92bae40bea0/transformed/ui-tooling/AndroidManifest.xml:25:13-36
-54
-55        <provider
-55-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:29:9-37:20
-56            android:name="androidx.startup.InitializationProvider"
-56-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:30:13-67
-57            android:authorities="com.iptvplayer.tv.androidx-startup"
-57-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:31:13-68
-58            android:exported="false" >
-58-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:32:13-37
-59            <meta-data
-59-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:34:13-36:52
-60                android:name="androidx.work.WorkManagerInitializer"
-60-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:35:17-68
-61                android:value="androidx.startup" />
-61-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:36:17-49
-62            <meta-data
-62-->[androidx.emoji2:emoji2:1.4.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/151cfa121f17f17697223e3aa143b1bc/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
-63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-63-->[androidx.emoji2:emoji2:1.4.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/151cfa121f17f17697223e3aa143b1bc/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
-64                android:value="androidx.startup" />
-64-->[androidx.emoji2:emoji2:1.4.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/151cfa121f17f17697223e3aa143b1bc/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
-65            <meta-data
-65-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/e760bea2575583342b2f500e3efbfa4b/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:29:13-31:52
-66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-66-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/e760bea2575583342b2f500e3efbfa4b/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:30:17-78
-67                android:value="androidx.startup" />
-67-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/e760bea2575583342b2f500e3efbfa4b/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:31:17-49
-68            <meta-data
-68-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:29:13-31:52
-69                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-69-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:30:17-85
-70                android:value="androidx.startup" />
-70-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:31:17-49
-71            <meta-data
-71-->[com.squareup.okhttp3:okhttp-android:5.5.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/f70163bf81f64d563b0d8d01a5d5d79b/transformed/okhttp/AndroidManifest.xml:16:13-18:52
-72                android:name="okhttp3.internal.platform.PlatformInitializer"
-72-->[com.squareup.okhttp3:okhttp-android:5.5.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/f70163bf81f64d563b0d8d01a5d5d79b/transformed/okhttp/AndroidManifest.xml:17:17-77
-73                android:value="androidx.startup" />
-73-->[com.squareup.okhttp3:okhttp-android:5.5.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/f70163bf81f64d563b0d8d01a5d5d79b/transformed/okhttp/AndroidManifest.xml:18:17-49
-74        </provider>
-75
-76        <service
-76-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:39:9-45:35
-77            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-77-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:40:13-84
-78            android:directBootAware="false"
-78-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:41:13-44
-79            android:enabled="@bool/enable_system_job_service_default"
-79-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:42:13-70
-80            android:exported="true"
-80-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:43:13-36
-81            android:permission="android.permission.BIND_JOB_SERVICE" />
-81-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:44:13-69
-82        <service
-82-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:46:9-52:35
-83            android:name="androidx.work.impl.foreground.SystemForegroundService"
-83-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:47:13-81
+40-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:19:9-35
+41        android:theme="@style/Theme.IPTVPlayer"
+41-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:20:9-48
+42        android:usesCleartextTraffic="true" >
+42-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:18:9-44
+43        <activity
+43-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:25:9-33:20
+44            android:name="com.iptvplayer.tv.MainActivity"
+44-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:26:13-41
+45            android:exported="true" >
+45-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:27:13-36
+46            <intent-filter>
+46-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:28:13-32:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:29:17-69
+47-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:29:25-66
+48
+49                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+49-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:31:17-86
+49-->/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/AndroidManifest.xml:31:27-83
+50            </intent-filter>
+51        </activity>
+52        <activity
+52-->[androidx.compose.ui:ui-tooling-android:1.12.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/deacdf650597197ca3f1b1dabb45ab7f/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
+53            android:name="androidx.compose.ui.tooling.PreviewActivity"
+53-->[androidx.compose.ui:ui-tooling-android:1.12.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/deacdf650597197ca3f1b1dabb45ab7f/transformed/ui-tooling/AndroidManifest.xml:24:13-71
+54            android:exported="true" />
+54-->[androidx.compose.ui:ui-tooling-android:1.12.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/deacdf650597197ca3f1b1dabb45ab7f/transformed/ui-tooling/AndroidManifest.xml:25:13-36
+55
+56        <service
+56-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:39:9-45:35
+57            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+57-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:40:13-84
+58            android:directBootAware="false"
+58-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:41:13-44
+59            android:enabled="@bool/enable_system_job_service_default"
+59-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:42:13-70
+60            android:exported="true"
+60-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:43:13-36
+61            android:permission="android.permission.BIND_JOB_SERVICE" />
+61-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:44:13-69
+62        <service
+62-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:46:9-52:35
+63            android:name="androidx.work.impl.foreground.SystemForegroundService"
+63-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:47:13-81
+64            android:directBootAware="false"
+64-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:48:13-44
+65            android:enabled="@bool/enable_system_foreground_service_default"
+65-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:49:13-77
+66            android:exported="false" />
+66-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:50:13-37
+67
+68        <receiver
+68-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:54:9-59:35
+69            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+69-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:55:13-88
+70            android:directBootAware="false"
+70-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:56:13-44
+71            android:enabled="true"
+71-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:57:13-35
+72            android:exported="false" />
+72-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:58:13-37
+73        <receiver
+73-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:60:9-69:20
+74            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+74-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:61:13-88
+75            android:directBootAware="false"
+75-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:62:13-44
+76            android:enabled="false"
+76-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:63:13-36
+77            android:exported="false" >
+77-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:64:13-37
+78            <intent-filter>
+78-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:66:13-68:29
+79                <action android:name="android.intent.action.BOOT_COMPLETED" />
+79-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:67:17-79
+79-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:67:25-76
+80            </intent-filter>
+81        </receiver>
+82        <receiver
+82-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:70:9-80:20
+83            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+83-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:71:13-78
 84            android:directBootAware="false"
-84-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:48:13-44
-85            android:enabled="@bool/enable_system_foreground_service_default"
-85-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:49:13-77
-86            android:exported="false" />
-86-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:50:13-37
-87
-88        <receiver
-88-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:54:9-59:35
-89            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-89-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:55:13-88
-90            android:directBootAware="false"
-90-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:56:13-44
-91            android:enabled="true"
-91-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:57:13-35
-92            android:exported="false" />
-92-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:58:13-37
-93        <receiver
-93-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:60:9-69:20
-94            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-94-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:61:13-88
-95            android:directBootAware="false"
-95-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:62:13-44
-96            android:enabled="false"
-96-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:63:13-36
-97            android:exported="false" >
-97-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:64:13-37
-98            <intent-filter>
-98-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:66:13-68:29
-99                <action android:name="android.intent.action.BOOT_COMPLETED" />
-99-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:67:17-79
-99-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:67:25-76
-100            </intent-filter>
-101        </receiver>
-102        <receiver
-102-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:70:9-80:20
-103            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
-103-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:71:13-78
-104            android:directBootAware="false"
-104-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:72:13-44
-105            android:enabled="true"
-105-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:73:13-35
-106            android:exported="true"
-106-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:74:13-36
-107            android:permission="android.permission.DUMP" >
-107-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:75:13-57
-108            <intent-filter>
-108-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:77:13-79:29
-109                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
-109-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:78:17-88
-109-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/924b7163bf255e546806e3ff62d3569b/transformed/work-runtime-2.12.0/AndroidManifest.xml:78:25-85
-110            </intent-filter>
-111        </receiver>
-112
-113        <uses-library
-113-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/bfb3c517cd8ff2783e077ac09ac965c4/transformed/window-1.5.0/AndroidManifest.xml:23:9-25:40
-114            android:name="androidx.window.extensions"
-114-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/bfb3c517cd8ff2783e077ac09ac965c4/transformed/window-1.5.0/AndroidManifest.xml:24:13-54
-115            android:required="false" />
-115-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/bfb3c517cd8ff2783e077ac09ac965c4/transformed/window-1.5.0/AndroidManifest.xml:25:13-37
-116        <uses-library
-116-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/bfb3c517cd8ff2783e077ac09ac965c4/transformed/window-1.5.0/AndroidManifest.xml:26:9-28:40
-117            android:name="androidx.window.sidecar"
-117-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/bfb3c517cd8ff2783e077ac09ac965c4/transformed/window-1.5.0/AndroidManifest.xml:27:13-51
-118            android:required="false" />
-118-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/bfb3c517cd8ff2783e077ac09ac965c4/transformed/window-1.5.0/AndroidManifest.xml:28:13-37
-119
-120        <service
-120-->[androidx.room:room-runtime-android:2.8.5] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/47660412808aff64f11e2f0c007531e0/transformed/room-runtime/AndroidManifest.xml:24:9-28:63
-121            android:name="androidx.room.MultiInstanceInvalidationService"
-121-->[androidx.room:room-runtime-android:2.8.5] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/47660412808aff64f11e2f0c007531e0/transformed/room-runtime/AndroidManifest.xml:25:13-74
-122            android:directBootAware="true"
-122-->[androidx.room:room-runtime-android:2.8.5] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/47660412808aff64f11e2f0c007531e0/transformed/room-runtime/AndroidManifest.xml:26:13-43
-123            android:exported="false" />
-123-->[androidx.room:room-runtime-android:2.8.5] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/47660412808aff64f11e2f0c007531e0/transformed/room-runtime/AndroidManifest.xml:27:13-37
-124
-125        <receiver
-125-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:34:9-52:20
-126            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-126-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:35:13-76
-127            android:directBootAware="false"
-127-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:36:13-44
-128            android:enabled="true"
-128-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:37:13-35
-129            android:exported="true"
-129-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:38:13-36
-130            android:permission="android.permission.DUMP" >
-130-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:39:13-57
-131            <intent-filter>
-131-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:40:13-42:29
-132                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-132-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:17-91
-132-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:25-88
-133            </intent-filter>
-134            <intent-filter>
-134-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:43:13-45:29
-135                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-135-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:17-85
-135-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:25-82
-136            </intent-filter>
-137            <intent-filter>
-137-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:46:13-48:29
-138                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-138-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:17-88
-138-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:25-85
-139            </intent-filter>
-140            <intent-filter>
-140-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:49:13-51:29
-141                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-141-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:17-95
-141-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/173115ecaccca40a8b7c1c13836d03a6/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:25-92
-142            </intent-filter>
-143        </receiver>
-144    </application>
-145
-146</manifest>
+84-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:72:13-44
+85            android:enabled="true"
+85-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:73:13-35
+86            android:exported="true"
+86-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:74:13-36
+87            android:permission="android.permission.DUMP" >
+87-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:75:13-57
+88            <intent-filter>
+88-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:77:13-79:29
+89                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+89-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:78:17-88
+89-->[androidx.work:work-runtime:2.12.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/4f74d99fc923c47d916193318c95e085/transformed/work-runtime-2.12.0/AndroidManifest.xml:78:25-85
+90            </intent-filter>
+91        </receiver>
+92
+93        <uses-library
+93-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/75b929acebb7fb89fbcb1640e6edf6dd/transformed/window-1.5.0/AndroidManifest.xml:23:9-25:40
+94            android:name="androidx.window.extensions"
+94-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/75b929acebb7fb89fbcb1640e6edf6dd/transformed/window-1.5.0/AndroidManifest.xml:24:13-54
+95            android:required="false" />
+95-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/75b929acebb7fb89fbcb1640e6edf6dd/transformed/window-1.5.0/AndroidManifest.xml:25:13-37
+96        <uses-library
+96-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/75b929acebb7fb89fbcb1640e6edf6dd/transformed/window-1.5.0/AndroidManifest.xml:26:9-28:40
+97            android:name="androidx.window.sidecar"
+97-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/75b929acebb7fb89fbcb1640e6edf6dd/transformed/window-1.5.0/AndroidManifest.xml:27:13-51
+98            android:required="false" />
+98-->[androidx.window:window:1.5.0] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/75b929acebb7fb89fbcb1640e6edf6dd/transformed/window-1.5.0/AndroidManifest.xml:28:13-37
+99
+100        <service
+100-->[androidx.room:room-runtime-android:2.8.5] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/f006c467cf85cac7e0d07f8ed6be277f/transformed/room-runtime/AndroidManifest.xml:24:9-28:63
+101            android:name="androidx.room.MultiInstanceInvalidationService"
+101-->[androidx.room:room-runtime-android:2.8.5] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/f006c467cf85cac7e0d07f8ed6be277f/transformed/room-runtime/AndroidManifest.xml:25:13-74
+102            android:directBootAware="true"
+102-->[androidx.room:room-runtime-android:2.8.5] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/f006c467cf85cac7e0d07f8ed6be277f/transformed/room-runtime/AndroidManifest.xml:26:13-43
+103            android:exported="false" />
+103-->[androidx.room:room-runtime-android:2.8.5] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/f006c467cf85cac7e0d07f8ed6be277f/transformed/room-runtime/AndroidManifest.xml:27:13-37
+104
+105        <receiver
+105-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:34:9-52:20
+106            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+106-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:35:13-76
+107            android:directBootAware="false"
+107-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:36:13-44
+108            android:enabled="true"
+108-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:37:13-35
+109            android:exported="true"
+109-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:38:13-36
+110            android:permission="android.permission.DUMP" >
+110-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:39:13-57
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:40:13-42:29
+112                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+112-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:17-91
+112-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:25-88
+113            </intent-filter>
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:43:13-45:29
+115                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+115-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:17-85
+115-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:25-82
+116            </intent-filter>
+117            <intent-filter>
+117-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:46:13-48:29
+118                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+118-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:17-88
+118-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:25-85
+119            </intent-filter>
+120            <intent-filter>
+120-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:49:13-51:29
+121                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+121-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:17-95
+121-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/omidkheiri/.gradle/caches/9.8.2/transforms/395706247a3b4b70b381ff41619b179a/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:25-92
+122            </intent-filter>
+123        </receiver>
+124    </application>
+125
+126</manifest>

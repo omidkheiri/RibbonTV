@@ -1,5 +1,6 @@
 package com.iptvplayer.tv.feature.player
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -33,7 +34,11 @@ import com.iptvplayer.tv.core.player.PlayerViewModel
 import com.iptvplayer.tv.domain.model.PlaybackState
 
 @Composable
-fun PlayerScreen(viewModel: PlayerViewModel) {
+fun PlayerScreen(
+    viewModel: PlayerViewModel,
+    title: String,
+    onBack: () -> Unit,
+) {
     val uiState by viewModel.uiState.collectAsState()
     val lifecycleOwner = LocalLifecycleOwner.current
     val focusRequester = remember { FocusRequester() }
@@ -52,6 +57,11 @@ fun PlayerScreen(viewModel: PlayerViewModel) {
 
     LaunchedEffect(Unit) {
         focusRequester.requestFocus()
+    }
+
+    BackHandler {
+        viewModel.stop()
+        onBack()
     }
 
     Box(
@@ -88,13 +98,13 @@ fun PlayerScreen(viewModel: PlayerViewModel) {
             verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             Text(
-                text = uiState.errorMessage ?: "Mux HLS test stream",
+                text = uiState.errorMessage ?: uiState.title.ifBlank { title },
                 color = Color.White,
                 style = MaterialTheme.typography.titleMedium,
             )
             if (uiState.errorMessage != null) {
                 Text(
-                    text = "Check your network connection, then retry.",
+                    text = "Check the network and stream format, then retry.",
                     color = Color.White,
                     style = MaterialTheme.typography.bodyMedium,
                 )

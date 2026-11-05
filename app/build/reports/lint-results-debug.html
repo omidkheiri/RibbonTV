@@ -177,9 +177,9 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 3 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 5 warnings</span>
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Thu Nov 05 05:16:58 EST 2026 by AGP (9.5.0)</nav>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Thu Nov 05 05:55:48 EST 2026 by AGP (9.5.0)</nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -188,7 +188,7 @@ document.getElementById(id).style.display = 'none';
       <a class="mdl-navigation__link" href="#overview"><i class="material-icons">dashboard</i>Overview</a>
       <a class="mdl-navigation__link" href="#OldTargetApi"><i class="material-icons warning-icon">warning</i>Target SDK attribute is not targeting latest version (1)</a>
       <a class="mdl-navigation__link" href="#VectorRaster"><i class="material-icons warning-icon">warning</i>Vector Image Generation (1)</a>
-      <a class="mdl-navigation__link" href="#NewerVersionAvailable"><i class="material-icons warning-icon">warning</i>Newer Library Versions Available (1)</a>
+      <a class="mdl-navigation__link" href="#NewerVersionAvailable"><i class="material-icons warning-icon">warning</i>Newer Library Versions Available (3)</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -210,9 +210,9 @@ document.getElementById(id).style.display = 'none';
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#VectorRaster">VectorRaster</a>: Vector Image Generation</td></tr>
 <tr>
-<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<td class="countColumn">3</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#NewerVersionAvailable">NewerVersionAvailable</a>: Newer Library Versions Available</td></tr>
-<tr><td></td><td class="categoryColumn"><a href="#ExtraIssues">Included Additional Checks (88)</a>
+<tr><td></td><td class="categoryColumn"><a href="#ExtraIssues">Included Additional Checks (89)</a>
 </td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (47)</a>
 </td></tr>
@@ -339,6 +339,26 @@ Dismiss</button>            </div>
 <span class="lineno">  7 </span>ksp = "2.3.13"
 </pre>
 
+<span class="location"><a href="../../../gradle/libs.versions.toml">../../../gradle/libs.versions.toml</a>:18</span>: <span class="message">A newer version of io.coil-kt.coil3:coil-compose than 3.4.0 is available: 3.6.3</span><br /><pre class="errorlines">
+<span class="lineno"> 15 </span>lifecycle = "2.11.0"
+<span class="lineno"> 16 </span>activity-compose = "1.13.0"
+<span class="lineno"> 17 </span>junit = "4.13.2"
+<span class="caretline"><span class="lineno"> 18 </span>coil = <span class="warning">"3.4.0"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 19 </span>androidx-hilt = "1.4.0"
+<span class="lineno"> 20 </span>
+<span class="lineno"> 21 </span>[libraries]
+</pre>
+
+<span class="location"><a href="../../../gradle/libs.versions.toml">../../../gradle/libs.versions.toml</a>:18</span>: <span class="message">A newer version of io.coil-kt.coil3:coil-network-okhttp than 3.4.0 is available: 3.6.3</span><br /><pre class="errorlines">
+<span class="lineno"> 15 </span>lifecycle = "2.11.0"
+<span class="lineno"> 16 </span>activity-compose = "1.13.0"
+<span class="lineno"> 17 </span>junit = "4.13.2"
+<span class="caretline"><span class="lineno"> 18 </span>coil = <span class="warning">"3.4.0"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 19 </span>androidx-hilt = "1.4.0"
+<span class="lineno"> 20 </span>
+<span class="lineno"> 21 </span>[libraries]
+</pre>
+
 </div>
 <div class="metadata"><div class="explanation" id="explanationNewerVersionAvailable" style="display: none;">
 This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project. This is similar to the <code>GradleDependency</code> check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also <b>much</b> slower.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
@@ -443,6 +463,42 @@ duplicate requests unintentionally. You should be using<br/>
 Vendor: Android Open Source Project<br/>
 Identifier: androidx.work<br/>
 Feedback: <a href="https://issuetracker.google.com/issues/new?component=409906">https://issuetracker.google.com/issues/new?component=409906</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">CoilErrorFunction<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+Using Kotlin's stdlib <code>error()</code> function inside an <code>ImageRequest.Builder</code> lambda<br/>
+(such as in <code>ImageView.load { }</code>) will throw an <code>IllegalStateException</code><br/>
+at runtime instead of setting an error image.<br/>
+<br/>
+This is likely a mistake caused by not importing <code>coil3.request.error</code>.<br/>
+By default, the compiler will resolve the `error()`function call to<br/>
+<code>kotlin.error()</code> if <code>coil3.request.error</code> is not imported.<br/>
+<br/>
+<b>Wrong:</b>
+<pre>
+imageView.load(url) {
+    error(R.drawable.error) // This is kotlin.error() - throws an exception!
+}
+</pre>
+<br/>
+<b>Correct:</b>
+<pre>
+import coil3.request.error
+
+imageView.load(url) {
+    error(R.drawable.error) // This is coil3.request.error() - sets the error image.
+}
+</pre>
+<br/><div class="vendor">
+Vendor: Coil<br/>
+Identifier: coil<br/>
+Feedback: <a href="https://github.com/coil-kt/coil/issues">https://github.com/coil-kt/coil/issues</a><br/>
 </div>
 <br/>
 <br/></div>

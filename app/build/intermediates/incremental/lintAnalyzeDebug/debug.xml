@@ -7,7 +7,7 @@
     mergedManifest="build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml"
     proguardFiles="build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-9.5.0"
     partialResultsDir="build/intermediates/lint_partial_results/debug/lintAnalyzeDebug/out"
-    desugaredMethodsFiles="/Users/omidkheiri/.gradle/caches/9.8.2/transforms/8d0ab07c0bcb73143b04fa48697c1d0e/transformed/D8BackportedDesugaredMethods.txt">
+    desugaredMethodsFiles="/Users/omidkheiri/.gradle/caches/9.8.2/transforms/5c83c15077543baecf06cadbd14cbc66/transformed/D8BackportedDesugaredMethods.txt">
   <buildFeatures/>
   <sourceProviders>
     <sourceProvider
@@ -26,6 +26,6 @@
       type="MAIN"
       applicationId="com.iptvplayer.tv"
       generatedSourceFolders="build/generated/ksp/debug/java:build/generated/ksp/debug/kotlin:build/generated/ap_generated_sources/debug/out"
-      desugaredMethodsFiles="/Users/omidkheiri/.gradle/caches/9.8.2/transforms/8d0ab07c0bcb73143b04fa48697c1d0e/transformed/D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="/Users/omidkheiri/.gradle/caches/9.8.2/transforms/5c83c15077543baecf06cadbd14cbc66/transformed/D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>

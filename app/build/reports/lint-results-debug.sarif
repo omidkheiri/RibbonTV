@@ -256,6 +256,142 @@
                     "partialFingerprints": {
                         "sourceContext/v1": "8fe9f4eccb6e8a93"
                     }
+                },
+                {
+                    "ruleId": "NewerVersionAvailable",
+                    "ruleIndex": 0,
+                    "message": {
+                        "text": "A newer version of io.coil-kt.coil3:coil-compose than 3.4.0 is available: 3.6.3"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "gradle/libs.versions.toml"
+                                },
+                                "region": {
+                                    "startLine": 18,
+                                    "startColumn": 8,
+                                    "endLine": 18,
+                                    "endColumn": 15,
+                                    "charOffset": 369,
+                                    "charLength": 7,
+                                    "snippet": {
+                                        "text": "\"3.4.0\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 16,
+                                    "endLine": 21,
+                                    "snippet": {
+                                        "text": "activity-compose = \"1.13.0\"\njunit = \"4.13.2\"\ncoil = \"3.4.0\"\nandroidx-hilt = \"1.4.0\"\n\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Change to 3.6.3"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "gradle/libs.versions.toml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 18,
+                                                "startColumn": 9,
+                                                "charOffset": 370,
+                                                "endLine": 18,
+                                                "endColumn": 14,
+                                                "charLength": 5
+                                            },
+                                            "insertedContent": {
+                                                "text": "3.6.3"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "393d87906667a50b"
+                    }
+                },
+                {
+                    "ruleId": "NewerVersionAvailable",
+                    "ruleIndex": 0,
+                    "message": {
+                        "text": "A newer version of io.coil-kt.coil3:coil-network-okhttp than 3.4.0 is available: 3.6.3"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "gradle/libs.versions.toml"
+                                },
+                                "region": {
+                                    "startLine": 18,
+                                    "startColumn": 8,
+                                    "endLine": 18,
+                                    "endColumn": 15,
+                                    "charOffset": 369,
+                                    "charLength": 7,
+                                    "snippet": {
+                                        "text": "\"3.4.0\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 16,
+                                    "endLine": 21,
+                                    "snippet": {
+                                        "text": "activity-compose = \"1.13.0\"\njunit = \"4.13.2\"\ncoil = \"3.4.0\"\nandroidx-hilt = \"1.4.0\"\n\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Change to 3.6.3"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "gradle/libs.versions.toml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 18,
+                                                "startColumn": 9,
+                                                "charOffset": 370,
+                                                "endLine": 18,
+                                                "endColumn": 14,
+                                                "charLength": 5
+                                            },
+                                            "insertedContent": {
+                                                "text": "3.6.3"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "393d87906667a50b"
+                    }
                 }
             ]
         }

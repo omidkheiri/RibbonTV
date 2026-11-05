@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.iptvplayer.tv.app-mergeDebugResources-44:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.iptvplayer.tv.app-mergeDebugResources-48:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "/Users/omidkheiri/.gradle/caches/9.8.2/transforms/9f2915aebe3e8b3e59d2c4cffbe0d6eb/transformed/foundation/res/values-en-rXC/values-en-rXC.xml",
+                    "source": "/Users/omidkheiri/.gradle/caches/9.8.2/transforms/a446d8846f556e91f524f2ba326aaa54/transformed/foundation/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/omidkheiri/.gradle/caches/9.8.2/transforms/9a8387f496b775b0a456e72ae6bffb20/transformed/core-1.18.0/res/values-en-rXC/values-en-rXC.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,251,456,657,858,1065,1270,1482",
-                        "endColumns": "195,204,200,200,206,204,211,203",
-                        "endOffsets": "246,451,652,853,1060,1265,1477,1681"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,85",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "107,303,508,709,910,1117,1322,17027",
-                        "endColumns": "195,204,200,200,206,204,211,203",
-                        "endOffsets": "298,503,704,905,1112,1317,1529,17226"
-                    }
-                },
-                {
-                    "source": "/Users/omidkheiri/.gradle/caches/9.8.2/transforms/5a66938d4745880182c28a7a1571e6ef/transformed/material3/res/values-en-rXC/values-en-rXC.xml",
+                    "source": "/Users/omidkheiri/.gradle/caches/9.8.2/transforms/839eeefffd6fa50724db839c18a99a10/transformed/material3/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/omidkheiri/.gradle/caches/9.8.2/transforms/70ea1804faa0f717b4edda1d3a940660/transformed/ui/res/values-en-rXC/values-en-rXC.xml",
+                    "source": "/Users/omidkheiri/.gradle/caches/9.8.2/transforms/d46a25bfb698100a83a807f0b5fc012e/transformed/ui/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,6 +52,23 @@
                         "startOffsets": "1534,1725,1910,2107,2309,2496,2681,15410,15598,15785,15966,16151,16317,16503,16681,16856,17231,17410,17577",
                         "endColumns": "190,184,196,201,186,184,192,187,186,180,184,165,185,177,174,170,178,166,241",
                         "endOffsets": "1720,1905,2102,2304,2491,2676,2869,15593,15780,15961,16146,16312,16498,16676,16851,17022,17405,17572,17814"
+                    }
+                },
+                {
+                    "source": "/Users/omidkheiri/.gradle/caches/9.8.2/transforms/fe48ecfd93ab917eaf6b049d1934bc28/transformed/core-1.18.0/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,251,456,657,858,1065,1270,1482",
+                        "endColumns": "195,204,200,200,206,204,211,203",
+                        "endOffsets": "246,451,652,853,1060,1265,1477,1681"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,85",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "107,303,508,709,910,1117,1322,17027",
+                        "endColumns": "195,204,200,200,206,204,211,203",
+                        "endOffsets": "298,503,704,905,1112,1317,1529,17226"
                     }
                 }
             ]
