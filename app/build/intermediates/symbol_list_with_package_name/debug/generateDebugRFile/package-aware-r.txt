@@ -1,0 +1,4 @@
+com.iptvplayer.tv
+drawable tv_banner
+drawable tv_icon
+style Theme_IPTVPlayer

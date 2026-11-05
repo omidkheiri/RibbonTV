@@ -1,0 +1,51 @@
+/Users/omidkheiri/Projects/IPTVPlayer/app/build.gradle.kts:15: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk = 36
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application or sdk runs on a version of Android that is more
+   recent than your targetSdk specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdk is
+   less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdk to the highest available value. Then
+   test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/Users/omidkheiri/Projects/IPTVPlayer/app/src/main/res/drawable/tv_banner.xml:2: Warning: Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more [VectorRaster]
+    android:width="320dp"
+                   ~~~~~
+
+   Explanation for issues of type "VectorRaster":
+   Vector icons require API 21 or API 24 depending on used features, but when
+   minSdkVersion is less than 21 or 24 and Android Gradle plugin 1.4 or higher
+   is used, a vector drawable placed in the drawable folder is automatically
+   moved to drawable-anydpi-v21 or drawable-anydpi-v24 and bitmap images are
+   generated for different screen resolutions for backwards compatibility.
+
+   However, there are some limitations to this raster image generation, and
+   this lint check flags elements and attributes that are not fully supported.
+   You should manually check whether the generated output is acceptable for
+   those older devices.
+
+/Users/omidkheiri/Projects/IPTVPlayer/gradle/libs.versions.toml:4: Warning: A newer version of org.jetbrains.kotlin.plugin.compose than 2.2.10 is available: 2.4.21 [NewerVersionAvailable]
+compose-compiler = "2.2.10"
+                   ~~~~~~~~
+
+   Explanation for issues of type "NewerVersionAvailable":
+   This detector checks with a central repository to see if there are newer
+   versions available for the dependencies used by this project. This is
+   similar to the GradleDependency check, which checks for newer versions
+   available in the Android SDK tools and libraries, but this works with any
+   MavenCentral dependency, and connects to the library every time, which
+   makes it more flexible but also much slower.
+
+0 errors, 3 warnings

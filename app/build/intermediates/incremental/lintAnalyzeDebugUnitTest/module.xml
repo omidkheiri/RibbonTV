@@ -1,0 +1,20 @@
+<lint-module
+    format="1"
+    dir="/Users/omidkheiri/Projects/IPTVPlayer/app"
+    name=":app"
+    type="APP"
+    maven="IPTVPlayer:app:unspecified"
+    agpVersion="9.5.0"
+    buildFolder="build"
+    bootClassPath="/Users/omidkheiri/Library/Android/sdk/platforms/android-37.0/android.jar:/Users/omidkheiri/Library/Android/sdk/build-tools/36.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-37.0"
+    neverShrinking="true"
+    highlightGradualR8Api="false">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.iptvplayer.tv.app-debug-46:/drawable_tv_icon.xml.flat",
+        "source": "com.iptvplayer.tv.app-main-48:/drawable/tv_icon.xml"
+    },
+    {
+        "merged": "/Users/omidkheiri/.gradle/daemon/9.8.2/com.iptvplayer.tv.app-debug-46:/drawable_tv_banner.xml.flat",
+        "source": "/Users/omidkheiri/.gradle/daemon/9.8.2/com.iptvplayer.tv.app-main-48:/drawable/tv_banner.xml"
+    }
+]

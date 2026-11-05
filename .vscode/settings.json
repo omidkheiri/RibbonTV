@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^printf '%s\\\\n' '--- macOS ---'; sw_vers; printf '%s\\\\n' '--- CPU ---'; uname -m; sysctl -n machdep\\.cpu\\.brand_string 2>/dev/null \\|\\| true; printf '%s\\\\n' '--- disk ---'; df -h \"\\$HOME\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

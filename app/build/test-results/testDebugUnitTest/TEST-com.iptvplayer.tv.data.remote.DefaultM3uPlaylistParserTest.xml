@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.iptvplayer.tv.data.remote.DefaultM3uPlaylistParserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-05T10:17:29.509Z" hostname="Omids-MacBook-Pro.local" time="0.021">
+  <properties/>
+  <testcase name="uses tvg name when display title is empty and URL when ID is absent" classname="com.iptvplayer.tv.data.remote.DefaultM3uPlaylistParserTest" time="0.016"/>
+  <testcase name="ignores incomplete entries and standalone URLs" classname="com.iptvplayer.tv.data.remote.DefaultM3uPlaylistParserTest" time="0.001"/>
+  <testcase name="uses numbered name when title and tvg name are absent" classname="com.iptvplayer.tv.data.remote.DefaultM3uPlaylistParserTest" time="0.0"/>
+  <testcase name="keeps commas inside quoted metadata and channel titles" classname="com.iptvplayer.tv.data.remote.DefaultM3uPlaylistParserTest" time="0.001"/>
+  <testcase name="does not parse HLS manifests as channel playlists" classname="com.iptvplayer.tv.data.remote.DefaultM3uPlaylistParserTest" time="0.001"/>
+  <testcase name="parses channel metadata and stream URL" classname="com.iptvplayer.tv.data.remote.DefaultM3uPlaylistParserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

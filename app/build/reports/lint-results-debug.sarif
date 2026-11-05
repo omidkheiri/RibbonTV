@@ -1,0 +1,263 @@
+{
+    "$schema" : "https://docs.oasis-open.org/sarif/sarif/v2.1.0/errata01/os/schemas/sarif-schema-2.1.0.json",
+    "version" : "2.1.0",
+    "runs" : [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Android Lint",
+                    "fullName": "Android Lint (in gradle)",
+                    "version": "9.5.0",
+                    "semanticVersion": "9.5.0",
+                    "organization": "Google",
+                    "informationUri": "https://developer.android.com/studio/write/lint",
+                    "fullDescription": {
+                        "text": "Static analysis originally for Android source code but now performing general analysis"
+                    },
+                    "language": "en-US",
+                    "rules": [
+                        {
+                            "id": "NewerVersionAvailable",
+                            "shortDescription": {
+                                "text": "Newer Library Versions Available"
+                            },
+                            "fullDescription": {
+                                "text": "This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project. This is similar to the GradleDependency check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also much slower.",
+                                "markdown": "This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project. This is similar to the `GradleDependency` check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also **much** slower."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 70
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Correctness"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "OldTargetApi",
+                            "shortDescription": {
+                                "text": "Target SDK attribute is not targeting latest version"
+                            },
+                            "fullDescription": {
+                                "text": "When your application or sdk runs on a version of Android that is more recent than your targetSdk specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the targetSdk is less than 14, your app may get an option button in the UI.\n\nTo fix this issue, set the targetSdk to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: https://developer.android.com/reference/android/os/Build.VERSION_CODES.html as well as follow this guide:\nhttps://developer.android.com/distribute/best-practices/develop/target-sdk.html",
+                                "markdown": "When your application or sdk runs on a version of Android that is more recent than your `targetSdk` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdk` is less than 14, your app may get an option button in the UI.\n\nTo fix this issue, set the `targetSdk` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: https://developer.android.com/reference/android/os/Build.VERSION_CODES.html as well as follow this guide:\nhttps://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 50
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Correctness"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "VectorRaster",
+                            "shortDescription": {
+                                "text": "Vector Image Generation"
+                            },
+                            "fullDescription": {
+                                "text": "Vector icons require API 21 or API 24 depending on used features, but when minSdkVersion is less than 21 or 24 and Android Gradle plugin 1.4 or higher is used, a vector drawable placed in the drawable folder is automatically moved to drawable-anydpi-v21 or drawable-anydpi-v24 and bitmap images are generated for different screen resolutions for backwards compatibility.\n\nHowever, there are some limitations to this raster image generation, and this lint check flags elements and attributes that are not fully supported. You should manually check whether the generated output is acceptable for those older devices.",
+                                "markdown": "Vector icons require API 21 or API 24 depending on used features, but when `minSdkVersion` is less than 21 or 24 and Android Gradle plugin 1.4 or higher is used, a vector drawable placed in the `drawable` folder is automatically moved to `drawable-anydpi-v21` or `drawable-anydpi-v24` and bitmap images are generated for different screen resolutions for backwards compatibility.\n\nHowever, there are some limitations to this raster image generation, and this lint check flags elements and attributes that are not fully supported. You should manually check whether the generated output is acceptable for those older devices."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 60
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Correctness"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "originalUriBaseIds": {
+                "%SRCROOT%": {
+                    "uri": "file:///Users/omidkheiri/Projects/IPTVPlayer/"
+                }
+            },
+            "results": [
+                {
+                    "ruleId": "OldTargetApi",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.",
+                        "markdown": "Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle.kts"
+                                },
+                                "region": {
+                                    "startLine": 15,
+                                    "startColumn": 9,
+                                    "endLine": 15,
+                                    "endColumn": 23,
+                                    "charOffset": 322,
+                                    "charLength": 14,
+                                    "snippet": {
+                                        "text": "targetSdk = 36"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 13,
+                                    "endLine": 18,
+                                    "snippet": {
+                                        "text": "        applicationId = \"com.iptvplayer.tv\"\n        minSdk = 26\n        targetSdk = 36\n        versionCode = 1\n        versionName = \"0.1.0\"\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Update targetSdkVersion to 37"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle.kts"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 15,
+                                                "startColumn": 21,
+                                                "charOffset": 334,
+                                                "endLine": 15,
+                                                "endColumn": 23,
+                                                "charLength": 2
+                                            },
+                                            "insertedContent": {
+                                                "text": "37"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "ee8deee72f06e690"
+                    }
+                },
+                {
+                    "ruleId": "VectorRaster",
+                    "ruleIndex": 2,
+                    "message": {
+                        "text": "Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/drawable/tv_banner.xml"
+                                },
+                                "region": {
+                                    "startLine": 2,
+                                    "startColumn": 20,
+                                    "endLine": 2,
+                                    "endColumn": 25,
+                                    "charOffset": 86,
+                                    "charLength": 5,
+                                    "snippet": {
+                                        "text": "320dp"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 5,
+                                    "snippet": {
+                                        "text": "<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:width=\"320dp\"\n    android:height=\"180dp\"\n    android:viewportWidth=\"320\"\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "0ce3c1038025fe97"
+                    }
+                },
+                {
+                    "ruleId": "NewerVersionAvailable",
+                    "ruleIndex": 0,
+                    "message": {
+                        "text": "A newer version of org.jetbrains.kotlin.plugin.compose than 2.2.10 is available: 2.4.21"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "gradle/libs.versions.toml"
+                                },
+                                "region": {
+                                    "startLine": 4,
+                                    "startColumn": 20,
+                                    "endLine": 4,
+                                    "endColumn": 28,
+                                    "charOffset": 100,
+                                    "charLength": 8,
+                                    "snippet": {
+                                        "text": "\"2.2.10\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 2,
+                                    "endLine": 7,
+                                    "snippet": {
+                                        "text": "agp = \"9.5.0\"\n# Must match the Kotlin compiler supplied by AGP 9.5.0.\ncompose-compiler = \"2.2.10\"\ncompose-bom = \"2026.09.00\"\ntv-material = \"1.1.0\"\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Change to 2.4.21"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "gradle/libs.versions.toml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 4,
+                                                "startColumn": 21,
+                                                "charOffset": 101,
+                                                "endLine": 4,
+                                                "endColumn": 27,
+                                                "charLength": 6
+                                            },
+                                            "insertedContent": {
+                                                "text": "2.4.21"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "8fe9f4eccb6e8a93"
+                    }
+                }
+            ]
+        }
+    ]
+}
